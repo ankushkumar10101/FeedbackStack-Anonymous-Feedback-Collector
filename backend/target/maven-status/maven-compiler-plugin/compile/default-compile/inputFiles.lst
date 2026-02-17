@@ -1,0 +1,6 @@
+D:\dev-projects\feedback\backend\src\main\java\com\feedbackstack\backend\BackendApplication.java
+D:\dev-projects\feedback\backend\src\main\java\com\feedbackstack\backend\config\CorsConfig.java
+D:\dev-projects\feedback\backend\src\main\java\com\feedbackstack\backend\controller\FeedbackController.java
+D:\dev-projects\feedback\backend\src\main\java\com\feedbackstack\backend\model\Feedback.java
+D:\dev-projects\feedback\backend\src\main\java\com\feedbackstack\backend\repository\FeedbackRepository.java
+D:\dev-projects\feedback\backend\src\main\java\com\feedbackstack\backend\service\FeedbackService.java

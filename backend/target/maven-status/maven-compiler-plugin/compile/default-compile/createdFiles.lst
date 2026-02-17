@@ -1,0 +1,7 @@
+com\feedbackstack\backend\config\CorsConfig.class
+com\feedbackstack\backend\repository\FeedbackRepository.class
+com\feedbackstack\backend\controller\FeedbackController.class
+com\feedbackstack\backend\service\FeedbackService.class
+com\feedbackstack\backend\model\Feedback.class
+com\feedbackstack\backend\service\FeedbackService$CategoryStats.class
+com\feedbackstack\backend\BackendApplication.class
