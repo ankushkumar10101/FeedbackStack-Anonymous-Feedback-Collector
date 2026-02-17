@@ -28,10 +28,6 @@ public class FeedbackService {
         return feedbackRepository.save(feedback);
     }
 
-    public long countFeedback() {
-        return feedbackRepository.count();
-    }
-
     public Map<String, Object> getAnalytics() {
         long totalFeedback = feedbackRepository.count();
         Double averageRating = getAverageRating();

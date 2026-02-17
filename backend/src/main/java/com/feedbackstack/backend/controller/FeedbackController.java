@@ -30,13 +30,4 @@ public class FeedbackController {
         return feedbackService.getAnalytics();
     }
 
-    @GetMapping("test-db")
-    public String testDbConnection() {
-        try {
-            long count = feedbackService.countFeedback();
-            return "Database Connection OK! Feedback count: " + count;
-        } catch (Exception e) {
-            return "Database Connection FAILED: " + e.getMessage();
-        }
-    }
 }
