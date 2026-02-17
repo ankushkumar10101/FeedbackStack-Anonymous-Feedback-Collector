@@ -15,8 +15,14 @@ public class FeedbackController {
     private FeedbackService feedbackService;
 
     @PostMapping("feedback/")
-    public Feedback submitFeedback(@RequestBody Feedback feedback) {
-        return feedbackService.saveFeedback(feedback);
+    public org.springframework.http.ResponseEntity<?> submitFeedback(@RequestBody Feedback feedback) {
+        try {
+            Feedback savedFeedback = feedbackService.saveFeedback(feedback);
+            return org.springframework.http.ResponseEntity.ok(savedFeedback);
+        } catch (Exception e) {
+            return org.springframework.http.ResponseEntity.internalServerError()
+                    .body("Error saving feedback: " + e.getMessage());
+        }
     }
 
     @GetMapping("analytics/")
