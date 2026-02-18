@@ -30,4 +30,9 @@ public class FeedbackController {
         return feedbackService.getAnalytics();
     }
 
+    @GetMapping("ping")
+    public String ping() {
+        return "pong";
+    }
+
 }

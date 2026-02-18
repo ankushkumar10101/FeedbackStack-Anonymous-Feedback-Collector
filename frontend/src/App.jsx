@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { pingBackend } from './services/api';
 
 import FeedbackForm from './pages/FeedbackForm';
 import AdminLogin from './pages/AdminLogin';
 import FeedbackList from './pages/FeedbackList';
 
 function App() {
+  useEffect(() => {
+    pingBackend();
+  }, []);
+
   return (
     <Router>
       <div className="App">

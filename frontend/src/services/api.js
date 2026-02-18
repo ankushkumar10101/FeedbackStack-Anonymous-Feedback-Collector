@@ -7,4 +7,13 @@ const api = axios.create({
     },
 });
 
+export const pingBackend = async () => {
+    try {
+        await api.get('ping');
+        console.log('Backend pinged successfully');
+    } catch (error) {
+        console.error('Error pinging backend:', error);
+    }
+};
+
 export default api;
